@@ -1,11 +1,16 @@
-<h1>Hello Angular World!</h1>
+<div class="container">
+  <h1>Angular Components</h1>
 
-<div [ngStyle]="{
-width: '200px',
-height: '200px',
-borderRadius: '5px',
-border: '1px solid #ccc'
-}" >
+  <app-post-form
+  (onAdd)="updatePosts($event)"
+  ></app-post-form>
 
+  <hr />
+  <app-post
+     *ngFor="let p of posts"
+     [myPost]="p"
+  ></app-post>
 
 </div>
+
+
