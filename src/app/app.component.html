@@ -1,32 +1,26 @@
 <div class="container">
-  <h1>Angular Directives</h1>
-  <p appStyle="red" [dStyles]="{border: '1px solid blue',borderRadius: '5px'}">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, facilis!</p>
+  <h1>Angular HttpClient</h1>
 
-  <p appStyle="blue" [dStyles]="{border: '1px solid red',borderRadius: '5px'}">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, facilis!</p>
-
-  <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
-
-<!--  <div *ngIf="isVisible" class="wrap">-->
-<!--    <p>-->
-<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto eligendi facere illo nisi quaerat saepe sequi soluta, ullam veritatis.-->
-<!--    </p>-->
-<!--  </div>-->
-<!-- <ng-template [ngIf]="isVisible">-->
-<!--  <div  class="wrap">-->
-<!--    <p>-->
-<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto eligendi facere illo nisi quaerat saepe sequi soluta, ullam veritatis.-->
-<!--    </p>-->
-<!--  </div>-->
-<!-- </ng-template>-->
-
-  <div  class="wrap" *appIfnot="!isVisible">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto eligendi facere illo nisi quaerat saepe sequi soluta, ullam veritatis.
-    </p>
+  <div class="card">
+    <div class="form-control">
+      <input type="text" placeholder="Название">
+    </div>
+    <button class="btn">Добавить</button>
+    <button class="btn">Загрузить</button>
   </div>
 
+  <hr>
+
+  <div class="card">
+    <p>
+      <span class="completed">Название</span>
+      <span>
+        <button class="btn btn-danger">Удалить</button>
+        <button class="btn">Завершить</button>
+      </span>
+    </p>
+  </div>
 </div>
+
 
 
