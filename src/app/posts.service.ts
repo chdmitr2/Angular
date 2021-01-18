@@ -14,4 +14,10 @@ export class PostsService {
     {title: 'Post 3', text: 'Sample text for post 3', id: 33},
     {title: 'Post 4', text: 'Sample text for post 4', id: 44},
   ];
+
+  // tslint:disable-next-line:typedef
+  getById(id: number){
+    return this.posts.find(p => p.id === id);
+  }
+
 }
